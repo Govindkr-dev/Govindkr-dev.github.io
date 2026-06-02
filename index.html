@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Govind Kumar Sharma — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- BACKGROUND -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="scanlines"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>GKS<span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero"><span>01.</span> Home</a></li>
+      <li><a href="#about"><span>02.</span> About</a></li>
+      <li><a href="#skills"><span>03.</span> Skills</a></li>
+      <li><a href="#projects"><span>04.</span> Projects</a></li>
+      <li><a href="#contact"><span>05.</span> Contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span> Available for work
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow"><span class="eyebrow-line"></span> BCA Student · Web Developer</p>
+      <h1 class="hero-name">
+        <span class="name-line line1">Govind</span>
+        <span class="name-line line2">Kumar</span>
+        <span class="name-line line3">Sharma</span>
+      </h1>
+      <p class="hero-sub">
+        Building modern web experiences &<br/>interactive applications that solve real problems.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="cta-primary">
+          <span>View Projects</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="resume.pdf" class="cta-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download CV
+        </a>
+      </div>
+      <div class="hero-counter">
+        <div class="counter-item">
+          <span class="counter-num" data-target="8">0</span>
+          <span class="counter-label">Skills</span>
+        </div>
+        <div class="counter-divider"></div>
+        <div class="counter-item">
+          <span class="counter-num" data-target="2">0</span>
+          <span class="counter-label">Projects</span>
+        </div>
+        <div class="counter-divider"></div>
+        <div class="counter-item">
+          <span class="counter-num" data-target="1">0</span>
+          <span class="counter-label">Year Coding</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="photo-frame">
+        <div class="photo-ring ring1"></div>
+        <div class="photo-ring ring2"></div>
+        <div class="photo-ring ring3"></div>
+        <div class="photo-glow"></div>
+        <img src="myimg.jpg" alt="Govind Kumar Sharma" class="hero-photo" />
+        <div class="photo-badge">
+          <span class="badge-dot"></span>
+          <span>Open to Opportunities</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about reveal">
+    <div class="section-label"><span>02</span> About</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="section-title">Who I <em>am</em></h2>
+        <div class="about-card">
+          <div class="card-terminal-bar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="terminal-title">about.txt</span>
+          </div>
+          <p class="about-text">
+            Hello! I'm <strong>Govind Kumar Sharma</strong>, a BCA student at Dr. A.P.J. Abdul Kalam Technical University — navigating the world of software development one project at a time.
+          </p>
+          <p class="about-text">
+            From writing my first C program to building interactive web experiences with HTML, CSS, and JavaScript, every line of code has taught me something new about both technology and myself.
+          </p>
+          <p class="about-text">
+            What drives me isn't just the languages — it's the <em>process</em>: breaking down complex problems, building clean solutions, and creating applications that feel good to use.
+          </p>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="info-pills">
+          <div class="info-pill">
+            <span class="pill-icon">🎓</span>
+            <div><strong>Education</strong><span>BCA — AKTU In 2025 (persuring)
+              <br>
+              I.Sc - BSEB In 2025
+              <br>
+              10th - BSEB In 2023
+            </span></div>
+          </div>
+          <div class="info-pill">
+            <span class="pill-icon">📍</span>
+            <div><strong>Location</strong><span>India, Bihar
+              <br>
+              Bhabua, Kaimur
+            </span></div>
+          </div>
+          <div class="info-pill">
+            <span class="pill-icon">💼</span>
+            <div><strong>Focus</strong><span>Web & App Development</span></div>
+          </div>
+          <div class="info-pill">
+            <span class="pill-icon">✉️</span>
+            <div><strong>Email</strong><span>govindsh.dev@gmail.com</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills reveal">
+    <div class="section-label"><span>03</span> Skills</div>
+    <h2 class="section-title">Tech <em>Stack</em></h2>
+    <div class="skills-grid">
+      <div class="skill-item" style="--i:0">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+        </div>
+        <span class="skill-name">C</span>
+        <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+      </div>
+      <div class="skill-item" style="--i:1">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+        </div>
+        <span class="skill-name">C++</span>
+        <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+      </div>
+      <div class="skill-item" style="--i:2">
+        <div class="skill-icon">☕</div>
+        <span class="skill-name">Java</span>
+        <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+      </div>
+      <div class="skill-item" style="--i:3">
+        <div class="skill-icon">🌐</div>
+        <span class="skill-name">HTML</span>
+        <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
+      </div>
+      <div class="skill-item" style="--i:4">
+        <div class="skill-icon">🎨</div>
+        <span class="skill-name">CSS</span>
+        <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+      </div>
+      <div class="skill-item" style="--i:5">
+        <div class="skill-icon">⚡</div>
+        <span class="skill-name">JavaScript</span>
+        <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+      </div>
+      <div class="skill-item" style="--i:6">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <span class="skill-name">Git</span>
+        <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+      </div>
+      <div class="skill-item" style="--i:7">
+        <div class="skill-icon">🗄️</div>
+        <span class="skill-name">SQL</span>
+        <div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects reveal">
+    <div class="section-label"><span>04</span> Projects</div>
+    <h2 class="section-title">Featured <em>Work</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="project-img-wrap">
+          <img src="project1.png" alt="RIVAA Streaming Platform" />
+          <div class="project-overlay">
+            <span class="project-tag">Web · UI/UX</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-number">01</div>
+          <h3>RIVAA Streaming Platform</h3>
+          <p>A modern streaming platform focused on UI, responsiveness, and an immersive user experience. Built with attention to detail and performance.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">
+              Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+            <a href="#" class="proj-link ghost">
+              GitHub
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8a9.56 9.56 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-wrap placeholder-img">
+          <div class="placeholder-content">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="project-overlay">
+            <span class="project-tag">Chat · Real-time</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-number">02</div>
+          <h3>Real-Time Chat App</h3>
+          <p>Interactive messaging platform with authentication and a fully responsive interface. Built for speed and usability.</p>
+          <div class="project-tech">
+            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">
+              Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+            <a href="#" class="proj-link ghost">
+              GitHub
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8a9.56 9.56 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact reveal">
+    <div class="section-label"><span>05</span> Contact</div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h2 class="section-title">Let's <em>Connect</em></h2>
+        <p class="contact-intro">I'm currently open to new opportunities and collaborations. Whether you have a project in mind or just want to say hello — my inbox is always open.</p>
+        <div class="contact-info">
+          <a href="mailto:govindsh.dev@gmail.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span>govindsh.dev@gmail.com</span>
+          </a>
+          <a href="tel:+916204982322" class="contact-item">
+            <span class="contact-icon">📱</span>
+            <span>+91 62049 82322</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="name" placeholder="Govind Kumar" required />
+            </div>
+            <div class="form-group">
+              <label>Your Email</label>
+              <input type="email" name="email" placeholder="hello@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Project collaboration..." />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <span>Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo"><span class="logo-bracket">[</span>GKS<span class="logo-bracket">]</span></div>
+      <p>Designed & Built by <strong>Govind Kumar Sharma</strong> · 2025</p>
+      <p class="footer-sub">BCA Student · Web Developer · Problem Solver</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
